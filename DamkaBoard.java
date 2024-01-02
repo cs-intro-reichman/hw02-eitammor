@@ -3,14 +3,23 @@ public class DamkaBoard {
 		int num = Integer.parseInt ( args[0] );
 		for(int i = 0; i<num; i++)
 		{
-			for (int j = 0; j<num; j++)
+			if (i%2==0)
 			{
-				if(j%2==0)
+				for (int j = 0; j<num; j++)
+				{
 					System.out.print("* ");
-				else 
-					System.out.print(" *");
-
+				}
 			}
+			else
+			{
+				for (int j = 0; j<num; j++)
+				{
+					System.out.print(" *");
+				}
+			}
+			
+				
+
 			System.out.println();
 		}
 	}
