@@ -17,7 +17,7 @@ public class OneOfEachStats1 {
 			while ((!isBoy)||(!isGirl))
 			{
 				//Its a girl!
-				if (Math.random() >= 0.5)
+				if (generator.nextDouble() >= 0.5)
 				{
 					isGirl = true;
 					sumChild++;
