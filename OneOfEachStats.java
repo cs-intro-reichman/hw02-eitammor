@@ -11,7 +11,6 @@ public class OneOfEachStats {
 		int numOfFamiliesWith2 = 0;
 		int numOfFamiliesWith3 = 0;
 		int numOfFamiliesWith4OrMore = 0;
-		System.out.println(generator.nextDouble() >= 0.5);
 		
 		for (int i = 0; i<numOfExperiments; i++)
 		{
@@ -21,8 +20,7 @@ public class OneOfEachStats {
 			while ((!isBoy)||(!isGirl))
 			{
 				//Its a girl!
-				//if (generator.nextDouble() >= ((double)(seed/2.0)))
-				if (Math.random() >= 0.5)
+				if (generator.nextDouble(seed) >= 0.5)
 				{
 					isGirl = true;
 					sumChild++;
